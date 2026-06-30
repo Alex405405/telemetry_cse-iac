@@ -8,7 +8,7 @@ provider "azurerm" {
 
 # Create Storage Account 
 resource "azurerm_storage_account" "sg1" { 
- name      =  "otstorageaccount_alva" # add your name to make it unique. Can only consist of lowercase letters and numbers, and must be between 3 and 24 characters long.
+ name      =  "otstorageaccountalva" # add your name to make it unique. Can only consist of lowercase letters and numbers, and must be between 3 and 24 characters long.
  resource_group_name   =  var.rg_name
  location     =  var.location
  # Performance tier: Standard (HDD-backed)
@@ -22,7 +22,7 @@ resource "azurerm_storage_account" "sg1" {
 
 # Create a Blob inside the Storage Account
 resource "azurerm_storage_container" "newcontainer1" { 
- name     =  "container-json_alva" 
+ name     =  "containerjsonalva" 
  storage_account_id =  azurerm_storage_account.sg1.id
  # Access level: "blob"    = anonymous read access to blobs only
  container_access_type =  "blob" 
@@ -36,7 +36,7 @@ location    =  var.location
 resource_group_name  =  var.rg_name  
 administrator_login   =  "adminformation" 
 administrator_password =  "formationCodingGame0!"
- sku_name =  "B_Standard_B1ms_alva" 
+ sku_name =  "BStandardB1msalva" 
  version =  "8.0.21" 
  geo_redundant_backup_enabled = false 
  storage { 
