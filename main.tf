@@ -36,7 +36,7 @@ location    =  var.location
 resource_group_name  =  var.rg_name  
 administrator_login   =  "adminformation" 
 administrator_password =  "formationCodingGame0!"
- sku_name =  "BStandardB1msalva" 
+ sku_name =  "bstandardb1msalva" 
  version =  "8.0.21" 
  geo_redundant_backup_enabled = false 
  storage { 
